@@ -9,7 +9,7 @@ const App = () => {
         { id: 1, diceValues: [], rolling: false, rollsLeft: 5 }
     ]);
     const [result, setResult] = useState('');
-    const [numPlayers, setNumPlayers] = useState(1);
+    const [numPlayers, setNumPlayers] = useState(3);
 
     const addPlayer = () => {
         setPlayers([
@@ -70,6 +70,7 @@ const App = () => {
             {result && <div className="result">{result}</div>}
             <div className="rules">
                 <h2>Game Rules</h2>
+                <p>Any numbers of player can Play.</p>
                 <p>Each player gets 5 chances to roll the dice.</p>
                 <p>Dice Ranking Sequence:</p>
                 <ul>
