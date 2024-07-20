@@ -9,7 +9,7 @@ const App = () => {
         { id: 1, diceValues: [], rolling: false, rollsLeft: 5 }
     ]);
     const [result, setResult] = useState('');
-    const [numPlayers, setNumPlayers] = useState(3);
+    const [numPlayers, setNumPlayers] = useState(1);
 
     const addPlayer = () => {
         setPlayers([
