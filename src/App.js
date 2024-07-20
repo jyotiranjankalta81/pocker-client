@@ -70,7 +70,7 @@ const App = () => {
                 ))}
             </div>
             <button onClick={addPlayer} className="add-player-button">Add Player</button>
-            <button onClick={calculateWinner} className="calculate-winner-button" style={{cursor:players.some(player => player.rollsLeft > 0)?"not-allowed":"pointer"}} disabled={players.some(player => player.rollsLeft > 0)}>Calculate Winner</button>
+            <button onClick={calculateWinner} className="calculate-winner-button" style={{cursor:players.some(player => player.rollsLeft > 0)?"not-allowed":"pointer"}} disabled={players.some(player => player.rollsLeft > 0)}>Check Winner</button>
             <button onClick={resetPlayer} className="add-player-button">Reset</button>
             {result && <div className="result">{result}</div>}
             <div className="rules">
